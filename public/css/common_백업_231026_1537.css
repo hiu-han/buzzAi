@@ -1,0 +1,186 @@
+/*** COMMON ***/
+.blind {
+  display: block;
+  position: absolute;
+  top: -99999px;
+  left: 0;
+}
+
+/** COMMON -> BUTTON **/
+.btn__wrap {
+  display: flex;
+  justify-content: center;
+}
+.btn__wrap .btn {
+  margin-left: 8px;
+  font-size: 0;
+}
+.btn__wrap .btn:first-child {
+  margin-left: 0;
+}
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn > button {
+  background-color: transparent;
+  border: none;
+}
+.btn > a,
+.btn > button {
+  display: block;
+  padding: 0 14px;
+  line-height: 38px;
+  font-size: 13px;
+  word-break: keep-all;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.btn.ty01 {
+  background-color: var(--color-primary);
+}
+.btn.ty01 > a,
+.btn.ty01 > button {
+  padding: 0 16px;
+  color: #fff;
+}
+.btn.ty01:hover {
+  background-color: var(--color-primary-hover);
+}
+.btn.ty02 {
+  background-color: #ededed;
+}
+.btn.ty02:hover {
+  background-color: #dfdfdf;
+}
+.btn.wide > button {
+  padding: 0 34px;
+  line-height: 44px;
+  font-size: 15px;
+}
+
+/** COMMON -> SELECT **/
+.select__wrap {
+  position: relative;
+}
+.select__wrap > .select-name {
+  display: inline-block;
+  margin-right: 6px;
+}
+.select__wrap > select {
+  display: inline-block;
+  height: 38px;
+  padding: 0 34px 0 10px;
+  border-radius: 4px;
+  border: 1px solid var(--color-line--input-default);
+}
+.select__wrap.table > select {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+}
+.select__wrap > select + .select-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background-image: url('/public/img/icon/icon-select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 53%;
+  background-size: 9px;
+}
+.select__wrap > select:focus + .select-icon {
+  /* background-color: #aaa; */
+}
+
+/** COMMON -> PAGINATION **/
+.paging__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+.paging__wrap .page-arrow {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.paging__wrap .page-arrow > button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  text-indent: -99999px;
+  background-image: url('/public/img/icon/icon-arrow-next-default.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.paging__wrap .page-arrow.prev > button {
+  background-image: url('/public/img/icon/icon-arrow-prev-default.svg');
+}
+.paging__wrap .page-arrow:hover > button {
+  box-shadow: var(--bxshadow-s);
+}
+.paging__wrap .page-arrow.prev:hover > button {
+  background-image: url('/public/img/icon/icon-arrow-prev-hover.svg');
+}
+.paging__wrap .page-arrow.next:hover > button {
+  background-image: url('/public/img/icon/icon-arrow-next-hover.svg');
+}
+.paging__wrap .page-arrow.disable > button {
+  opacity: 0.5;
+  cursor: default;
+}
+.paging__wrap .page-arrow.disable:hover > button {
+  cursor: default;
+}
+.paging__wrap .page-arrow.prev.disable:hover > button {
+  background-image: url('/public/img/icon/icon-arrow-prev-default.svg');
+}
+.paging__wrap .page-arrow.next.disable:hover > button {
+  background-image: url('/public/img/icon/icon-arrow-next-default.svg');
+}
+.pagination__list {
+  display: inline-block;
+  text-align: center;
+}
+.pagination__list .page__item {
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer;
+}
+.pagination__list .page__item.nowOn {
+  font-weight: 600;
+  color: #555;
+}
+.pagination__list .page__item.nowOn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 1px;
+  background-color: #555;
+}

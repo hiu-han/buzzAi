@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 학습모델 학습데이터 구축">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="AI Learning Data Collecting System">
+  <link rel="short cut icon" type="image/x-icon" href="/public/img/icon/favicon.png">
+  <title>AI 학습모델 학습데이터 구축</title>
+
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- SIDE MENU -->
+    <div id="aside"></div>
+
+    <!-- PAGE CONTENT -->
+    <div id="main">
+      <div class="wrapper">
+        <!-- 페이지 탑 -->
+        <div class="page-top">
+          <h2 class="page-title">작업 리스트</h2>
+        </div>
+
+        <!-- 페이지 컨텐츠 세션 // 작업 리스트 -->
+        <section class="page-content chatList">
+          <div class="section__inner">
+            <!-- 섹션 HEAD -->
+            <div class="section--head">
+              <div class="section-util__wrap">
+                <div class="section-util--left">
+                  <!-- 노출 항목수 변경 -->
+                  <!--p class="select__wrap util">
+                    <span class="select-name">항목 수</span>
+                    <select name="" id="selectListView">
+                      <option value="">10개</option>
+                      <option value="">25개</option>
+                      <option value="">50개</option>
+                      <option value="">100개</option>
+                    </select>
+                    <span class="select-icon"></span>
+                  </p -->
+                </div>
+                <div class="section-util--right">
+                  <p class="btn ty01">
+                    <a href="/chat/chat_add.html">신규 문서 생성</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 섹션 BODY -->
+            <div class="section--body">
+              <div class="content__wrap table">
+                <table class="section-content content--table">
+                  <colgroup>
+                    <col width="5%">
+                    <col width="5%">
+                    <col width="5%">
+                    <col width="5%">
+                    <col width="24%">
+                    <col width="9%">
+                    <col width="24%">
+                    <col width="6%">
+                    <col width="7%">
+                    <col width="7%">
+                    <col width="4%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="th--select">
+                        <p class="select__wrap table">
+                          <select name="" id="selectTableAgent">
+                            <option value="">작업자</option>
+                            <option value="">H101</option>
+                            <option value="">H102</option>
+                            <option value="">H103</option>
+                          </select>
+                          <span class="select-icon"></span>
+                        </p>
+                      </th>
+                      <th class="th--select">
+                        <p class="select__wrap table">
+                          <select name="" id="selectTableMnager">
+                            <option value="">검수자</option>
+                            <option value="">C101</option>
+                            <option value="">C201</option>
+                            <option value="">C301</option>
+                          </select>
+                          <span class="select-icon"></span>
+                        </p>
+                      </th>
+                      <th><span class="txt--num-doc">문서번호</span></th>
+                      <th><span class="txt--num-talk">ID</span></th>
+                      <th><span class="txt--origin">Original</span></th>
+                      <th><span class="txt--value">Value</span></th>
+                      <th><span class="txt--task">Task</span></th>
+                      <th class="th--select">
+                        <p class="select__wrap table">
+                          <select name="" id="selectTableStatus">
+                            <option value="">상태</option>
+                            <option value="">작성 전</option>
+                            <option value="">작성 완료</option>
+                            <option value="">작성 불가</option>
+                          </select>
+                          <span class="select-icon"></span>
+                        </p>
+                      </th>
+                      <th><span class="txt--date-make">작성일</span></th>
+                      <th><span class="txt--date-inspection">검수일</span></th>
+                      <th><span class="txt--num-turn">Turn 수</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>H101</td>
+                      <td>C101</td>
+                      <td>0001</td>
+                      <td></td>
+                      <td class="td--origin">
+                        <a href="/chat/chat_chk.html" class="link-area">
+                          Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it
+                          pertains to a growth marketing agency implementing these strategies and tactics for their
+                          clients
+                        </a>
+                      </td>
+                      <td></td>
+                      <td class="td--task"></td>
+                      <td>작성 전</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>H101</td>
+                      <td>C101</td>
+                      <td>0004</td>
+                      <td>00001</td>
+                      <td class="td--origin">
+                        <a href="/chat/chat_chk.html" class="link-area">
+                          Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it
+                          pertains to a growth marketing agency implementing these strategies and tactics for their
+                          clients
+                        </a>
+                      </td>
+                      <td>러셀 브런슨(Russell Brunson)</td>
+                      <td class="td--task">러셀 브런슨의 어쩌고 저쩌고 이러쿵 저러쿵 이랬다 저랬다 엉거주춤</td>
+                      <td>작성 완료</td>
+                      <td>20230101</td>
+                      <td>20230102</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>H101</td>
+                      <td>C101</td>
+                      <td>0001</td>
+                      <td>00001</td>
+                      <td class="td--origin">
+                        <a href="/chat/chat_chk.html" class="link-area">
+                          Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it
+                          pertains to a growth marketing agency implementing these strategies and tactics for their
+                          clients
+                        </a>
+                      </td>
+                      <td>러셀 브런슨(Russell Brunson)</td>
+                      <td class="td--task">러셀 브런슨의 어쩌고 저쩌고 이러쿵 저러쿵 이랬다 저랬다 엉거주춤</td>
+                      <td>작성 불가</td>
+                      <td>20230101</td>
+                      <td>20230102</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- pagination wrap -->
+                <div class="paging__wrap" id="metaListPaging">
+                  <!-- .page-arrow >> 넘어갈 페이지가 없을 경우 >> addClass '.disable' -->
+                  <p class="page-arrow prev disable"><button>prev</button></p>
+                  <ul class="pagination__list">
+                    <!-- 현재페이지 >> .page-count >> addClass '.now-on' -->
+                    <li class="page__item nowOn"><a href="#">1</a></li>
+                  </ul>
+                  <p class="page-arrow next disable"><button>next</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <!-- FOOTER -->
+      <div id="footer"></div>
+    </div>
+
+  </div>
+
+  <script src="/public/js/jquery-3.7.1.js"></script>
+  <script src="/public/js/include.js"></script>
+</body>
+
+</html>

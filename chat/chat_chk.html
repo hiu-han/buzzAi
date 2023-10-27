@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 학습모델 학습데이터 구축">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="AI Learning Data Collecting System">
+  <link rel="short cut icon" type="image/x-icon" href="/public/img/icon/favicon.png">
+  <title>AI 학습모델 학습데이터 구축</title>
+
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- SIDE MENU -->
+    <div id="aside"></div>
+
+    <!-- PAGE CONTENT -->
+    <div id="main">
+      <div class="wrapper">
+        <!-- 페이지 탑 -->
+        <div class="page-top">
+          <h2 class="page-title">작업 상세</h2>
+        </div>
+
+        <!-- 페이지 컨텐츠 섹션 // Task 정보 -->
+        <section class="page-content TaskInfo">
+          <div class="section__inner">
+            <!-- 섹션 HEAD -->
+            <div class="section--head">
+              <h3 class="section-title">작업 정보</h3>
+            </div>
+            <!-- 섹션 BODY -->
+            <div class="section-body">
+              <div class="content__wrap">
+                <div class="section-content">
+                  <!-- 작업 정보 // 작업자, 문서 번호 및 ID -->
+                  <ul class="flex__list horizontal">
+                    <li class="flex__item num--agent">
+                      <span class="item-name">작업자 번호</span>
+                      <span class="item-subs">H101</span>
+                    </li>
+                    <li class="flex__item num--doc">
+                      <span class="item-name">문서 번호</span>
+                      <span class="item-subs">00001</span>
+                    </li>
+                    <li class="flex__item num--id">
+                      <span class="item-name">ID</span>
+                      <span class="item-subs">00001</span>
+                    </li>
+                  </ul>
+                  <!-- Value 정보 // ChatGPT URL -->
+                  <ul class="input-info__list">
+                    <li class="input-info__item with--btn">
+                      <span class="item-name">ChatGPT URL 입력</span>
+                      <label class="input-label">
+                        <input type="text" placeholder="URL을 입력해 주세요.">
+                        <p class="btn btn--input">
+                          <button>입력</button>
+                        </p>
+                      </label>
+                    </li>
+                    <li class="input-info__item">
+                      <span class="item-name">Task</span>
+                      <label class="input-label">
+                        <input type="text" placeholder="Task 내용을 입력해 주세요.">
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 // Task 내용 -->
+        <section class="page-content TaskContents">
+          <div class="section__inner">
+            <!-- 섹션 HEAD -->
+            <div class="section--head">
+              <h3 class="section-title">작업 내용</h3>
+            </div>
+
+            <!-- 섹션 BODY -->
+            <div class="section-body chatBox">
+              <div class="content__wrap">
+                <!-- 대화 컨텐츠 // Original -->
+                <div id="chatOrigin" class="section-content chat">
+                  <!-- 대화 박스 -->
+                  <div class="chat__box">
+                    <div class="box__inner">
+                      <ul class="chat__list origin">
+                        <li class="chat__item human">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker human">HUMAN</span>
+                              Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it
+                              pertains to a growth marketing agency implementing these strategies and tactics for their
+                              clients...
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item gpt">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker gpt">GPT</span>
+                              Here are the main ideas of Jeff Walker's Product Launch Formula that can be applied by a
+                              growth marketing agency for their clients:\n\n1. Identify the target audience and their
+                              needs: Understand the ideal customer for the product or service, and create a messaging
+                              that
+                              resonates with them.\n2. Pre-launch: Build anticipation and excitement for the launch by
+                              creating buzz, gathering testimonials and case studies, and using social media to create
+                              awareness.\n3. Launch: Use a well-crafted launch sequence to maximize sales and
+                              conversions.
+                              This can include offering bonuses, creating scarcity, and using a deadline to create
+                              urgency.\n4. Post-launch: Follow up with customers, gather feedback, and continue to
+                              provide
+                              value to keep them engaged and loyal.\n5. Create a product suite: Once the initial product
+                              is successful, expand the offering by creating additional products or services that
+                              address
+                              other needs of the same audience.\n6. Continual optimization: Continually monitor and
+                              optimize the launch process and product suite to improve results.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item human">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker human">HUMAN</span>
+                              Summarize the main ideas of Brendon Burchard's Experts Academy into bullet points as it
+                              pertains to a growth marketing agency implementing these strategies and tactics for their
+                              clients...
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item gpt">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker gpt">GPT</span>
+                              Here are the main ideas of Brendon Burchard's Experts Academy that can be applied by a
+                              growth marketing agency for their clients:\n\n1. Identify your expertise: Define your area
+                              of expertise and create a unique value proposition that differentiates you from
+                              others.\n2.
+                              Create a content strategy: Develop a content strategy that showcases your expertise and
+                              provides value to your audience. This can include blog posts, videos, podcasts, and social
+                              media content.\n3. Build your audience: Use social media, advertising, and other channels
+                              to
+                              build your audience and increase your visibility.\n4. Develop your products: Create
+                              products
+                              and services that align with your expertise and meet the needs of your audience. These can
+                              include digital products, courses, coaching, and consulting services.\n5. Create a brand:
+                              Develop a strong brand that reflects your expertise and resonates with your audience.\n6.
+                              Build authority: Establish yourself as an authority in your industry by speaking at
+                              events,
+                              publishing a book, or appearing on podcasts or TV shows.\n7. Monetize your expertise:
+                              Develop a monetization strategy that leverages your expertise and products to generate
+                              revenue.\n8. Build a team: As your business grows, build a team of experts to help you
+                              scale
+                              your business and provide excellent service to your clients.\n9. Continual improvement:
+                              Continually improve your products, services, and marketing strategies to stay ahead of the
+                              competition and provide the best possible experience for your clients.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item human">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker human">HUMAN</span>
+                              What are the mental triggers in Jeff Walker's Product Launch Formula and \"Launch\" book?
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item gpt">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker gpt">GPT</span>
+                              Here are the mental triggers described in Jeff Walker's Product Launch Formula and
+                              \"Launch\" book:\n\n1. Scarcity: Creating a sense of urgency by limiting the availability
+                              of
+                              the product or service being launched.\n2. Authority: Establishing oneself as an expert or
+                              authority in the industry to build credibility and trust with the audience.\n3. Social
+                              proof: Using testimonials, case studies, and other forms of social proof to demonstrate
+                              the
+                              effectiveness and value of the product or service.\n4. Reciprocity: Offering something of
+                              value to the audience before asking for a sale or commitment.\n5. Likeability: Building a
+                              personal connection with the audience and creating a likable persona to increase the
+                              chances
+                              of a sale.\n6. Anticipation: Building anticipation and excitement leading up to the launch
+                              to generate buzz and increase interest in the product or service.\n7. Exclusivity:
+                              Creating
+                              a feeling of exclusivity by offering early access or special deals to a select group of
+                              people.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item human">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker human">HUMAN</span>
+                              Write a summary of why scarcity and urgency are the strongest mental triggers and have
+                              been
+                              the driving force behind many of our best performing campaigns over the last 8 years.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="chat__item gpt">
+                          <div class="chat__inner">
+                            <p class="chat--subs">
+                              <span class="speaker gpt">GPT</span>
+                              Scarcity and urgency are two of the strongest mental triggers in marketing because they
+                              create a sense of exclusivity and importance around a product or service. By creating a
+                              sense of limited availability or a deadline for a promotion, businesses can motivate
+                              customers to take action and make a purchase before it's too late.\n\nOver the last eight
+                              years, many businesses have leveraged these triggers in their marketing campaigns to great
+                              success. Scarcity and urgency have been used to sell everything from digital products to
+                              physical goods and services, and have proven to be highly effective in driving conversions
+                              and increasing revenue.\n\nThis is because scarcity and urgency tap into the natural human
+                              desire for instant gratification and fear of missing out (FOMO). When customers believe
+                              that
+                              they may miss out on a valuable opportunity if they don't act quickly, they are more
+                              likely
+                              to take action and make a purchase.\n\nFurthermore, scarcity and urgency can be combined
+                              with other mental triggers, such as social proof and authority, to create even more
+                              powerful
+                              marketing campaigns. By demonstrating the popularity and effectiveness of a product or
+                              service, businesses can increase the perceived value and urgency of a promotion, leading
+                              to
+                              even more sales and revenue.\n\nOverall, scarcity and urgency are powerful mental triggers
+                              that have been proven to drive results in marketing campaigns. By leveraging these
+                              triggers,
+                              businesses can create a sense of urgency and exclusivity around their products or
+                              services,
+                              motivating customers to take action and make a purchase before it's too late.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- 대화 컨텐츠 // ChatGpt -->
+                <div id="chatGpt" class="section-content chat">
+                  <!-- 대화 박스 -->
+                  <div class="chat__box">
+                    <div class="box__inner">
+                      <ul class="chat__list chatGpt">
+                        <li class="chat__item human">
+                          <p class="chat--icon"><span class="icon"></span></p>
+                          <div class="chat__inner">
+                            <textarea
+                              class="chat--txt">체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다??</textarea>
+                          </div>
+                        </li>
+                        <li class="chat__item gpt">
+                          <p class="chat--icon"><span class="icon"></span></p>
+                          <div class="chat__inner">
+                            <textarea
+                              class="chat--txt">국회는 국가의 예산안을 심의·확정한다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 사면·감형 및 복권에 관한 사항은 법률로 정한다. 혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.</textarea>
+                          </div>
+                        </li>
+                        <li class="chat__item human">
+                          <p class="chat--icon"><span class="icon"></span></p>
+                          <div class="chat__inner">
+                            <textarea
+                              class="chat--txt">공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다?</textarea>
+                          </div>
+                        </li>
+                        <li class="chat__item gpt">
+                          <p class="chat--icon"><span class="icon"></span></p>
+                          <div class="chat__inner">
+                            <textarea
+                              class="chat--txt">국회의원은 법률이 정하는 직을 겸할 수 없다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다. 대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의 경우와 초병·초소·유독음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다. 다만, 사형을 선고한 경우에는 그러하지 아니하다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.</textarea>
+                          </div>
+                        </li>
+                        <!-- 대화 추가하기 // 6turn을 채운 경우 addClass .del ->> 노출되지 않는다. -->
+                        <li class="chat__item add">
+                          <div class="add-chat">
+                            <p class="chat--icon"><span class="icon"></span></p>
+                            <textarea name="" class="chat--txt" placeholder="대화 내용을 입력해주세요."></textarea>
+                            <p class="btn btn--plus ty01">
+                              <button>대화 추가</button>
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 // Task 결과 -->
+        <section class="page-content TaskResult">
+          <div class="section__inner">
+            <!-- 섹션 HEAD -->
+            <div class="section--head">
+              <h3 class="section-title">작업 결과</h3>
+            </div>
+
+            <!-- 섹션 BODY -->
+            <div class="section-body">
+              <div class="content__wrap">
+                <div class="section-content">
+                  <!-- 작업 결과 -->
+                  <ul class="input-info__list">
+                    <li class="input-info__item">
+                      <span class="item-name">작성 불가 사유</span>
+                      <div class="input__box hide hidable">
+                        <div class="pick__wrap">
+                          <div class="pick__item">
+                            <h5 class="item-title">작성 불가 사유에 해당하는 항목을 선택해 주세요.</h5>
+                            <p class="pick-input__wrap">
+                              <label class="input-label">
+                                <input type="radio" name="reasonForUnable" value="">
+                                <span class="label-txt">문서 중복 (동일 문서)</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" name="reasonForUnable" value="">
+                                <span class="label-txt">앞 문서와 주제 연결 (동일 내용)</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" name="reasonForUnable" value="">
+                                <span class="label-txt">코드 관련 주제</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" name="reasonForUnable" value="">
+                                <span class="label-txt">문서 깨짐 / 내용 확인 불가</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" name="reasonForUnable" value="">
+                                <span class="label-txt">내용 없음</span>
+                              </label>
+                              <label class="input-label">
+                                <input type="radio" name="reasonForUnable" value="reasonEtc">
+                                <span class="label-txt">기타 (사유 기재 필요)</span>
+                              </label>
+                            </p>
+                            <p class="btn btn--reset ty-danger">
+                              <button id="reasonForUnableReset">reset</button>
+                            </p>
+                          </div>
+                          <span class="input-label">
+                            <!-- <input type="text" placeholder="작성 불가 사유를 입력해 주세요."> -->
+                            <textarea name="" id="writeReasonForUnable" placeholder="기타를 입력하신 경우 해당 사유를 입력해 주세요."
+                              disabled></textarea>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="box-opener" id="reasonForUnableOpener">
+                        <label class="input-label">
+                          <textarea name="" placeholder="작성 불가 사유를 선택해주세요."></textarea>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="input-info__item">
+                      <span class="item-name">반려 사유</span>
+                      <div class="input__box">
+                        <span class="input-label">
+                          <textarea name="" id="" placeholder="반려 사유를 입력해 주세요."></textarea>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- 작업 결과 버튼 -->
+                  <div class="btn__wrap">
+                    <p class="btn ty01 wide"><button>저장</button></p>
+                    <p class="btn ty02 wide ty-danger"><button>반려</button></p>
+                    <p class="btn ty01 wide"><button>검수완료</button></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- 로딩 애니메이션 >> layout.css // addClass active로 동작, 종료의 경우 removeClass active -->
+    <!-- <div id="loading" class="active"> -->
+    <div id="loading">
+      <div class="loading-bg">
+        <p class="loading-title">대화를 불러 오고 있습니다.</p>
+      </div>
+      <div class="dots-flow"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </div>
+  <script src="/public/js/jquery-3.7.1.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      /** 작업내용 // chatGpt와의 대화에서 입력되는 줄 수만큼 textarea의 높이 조절 // START **/
+      const chatTxts = document.querySelectorAll(`.chat--txt`);
+
+      for (i = 0; i < chatTxts.length; i++) {
+        if (chatTxts[i].scrollHeight > chatTxts[i].clientHeight) //textarea height 확장
+          chatTxts[i].style.height = chatTxts[i].scrollHeight + "px";
+        else //textarea height 축소
+          chatTxts[i].style.height = (chatTxts[i].scrollHeight - 18) + "px";
+      }
+      function autoResizeTextarea() {
+        for (i = 0; i < chatTxts.length; i++) {
+          if (chatTxts[i]) {
+            chatTxts[i].style.height = 'auto';
+            let height = chatTxts[i].scrollHeight; // 높이
+            chatTxts[i].style.height = `${height + 2}px`;
+          }
+        }
+      };
+      for (i = 0; i < chatTxts.length; i++) {
+        chatTxts[i].addEventListener('keydown', autoResizeTextarea);
+        chatTxts[i].addEventListener('keyup', autoResizeTextarea);
+      };
+      /** 작업내용 // chatGpt와의 대화에서 입력되는 줄 수만큼 textarea의 높이 조절 // END **/
+
+      /** 작업내용 // 작성불가사유 중 기타를 선택할 시 하단의 textarea 활성화 // START **/
+      const radioButtons = document.querySelectorAll('input[name="reasonForUnable"]');
+      const textareaEtc = document.getElementById('writeReasonForUnable');
+
+      for (const radio of radioButtons) {
+        radio.addEventListener('change', function () {
+          if (radio.value === 'reasonEtc') {
+            textareaEtc.disabled = false; // 텍스트 에어리어 활성화
+          } else {
+            textareaEtc.value = '';
+            textareaEtc.disabled = true; // 텍스트 에어리어 비활성화
+          }
+        });
+      }
+      /** 작업내용 // 작성불가사유 중 기타를 선택할 시 하단의 textarea 활성화 // END **/
+
+      /** 작업내용 // 작성불가사유 선택 후 모든 선택 해제하기 // START **/
+      $('#reasonForUnableOpener').on('click', function () {
+        $(this).addClass('hide');
+        $('.hidable').removeClass('hide');
+      });
+
+      $('#reasonForUnableReset').on('click', function () {
+        $('input[name="reasonForUnable"]').prop('checked', false);
+        textareaEtc.value = '';
+      });
+      /** 작업내용 // 작성불가사유 선택 후 모든 선택 해제하기 // END **/
+
+    });
+  </script>
+</body>
+
+</html>

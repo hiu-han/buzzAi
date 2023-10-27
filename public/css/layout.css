@@ -1,0 +1,105 @@
+/*** LAYOUT ***/
+#wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+#aside {
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  min-height: 100vh;
+  /* border-right: 1px solid var(--color-line--normal); */
+  box-shadow: var(--bxshadow-l);
+  z-index: 100;
+}
+#main {
+  position: relative;
+  /* width: calc(100% - 200px); */
+  width: 100%;
+  min-width: 1200px;
+  min-height: 100vh;
+  margin-left: 200px;
+  background-color: var(--color-bg);
+}
+
+/*** ASIDE ***/
+.layout-aside {
+  width: 200px;
+  height: 100%;
+}
+.aside__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px 24px;
+  height: 100%;
+}
+
+.aside-logo {
+  height: 60px;
+  margin-bottom: 24px;
+  background-color: lightcyan;
+}
+
+.gnb__list .gnb__item {
+  padding: 4px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+}
+.gnb__list .gnb__item:hover {
+  background-color: var(--color-primary);
+}
+.gnb__list .gnb__item:last-child {
+  margin-bottom: 0;
+}
+.gnb__list .gnb__item > a {
+  display: block;
+  font-family: var(--font-lineseed-Rg);
+  font-size: 18px;
+  color: #515961;
+  letter-spacing: -0.04rem;
+}
+.gnb__list .gnb__item > a > span {
+  display: inline-block;
+  vertical-align: top;
+}
+.gnb__list .gnb__item .menu--icon {
+  position: relative;
+  width: 34px;
+  height: 36px;
+  margin-right: 2px;
+  background-image: url('/public/img/icon/icon-list.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.gnb__list .gnb__item.menu--chat-list .menu--icon {
+  background-image: url('/public/img/icon/icon-list.svg');
+}
+.gnb__list .gnb__item.menu--chat-list:hover .menu--icon {
+  background-image: url('/public/img/icon/icon-list-fff.svg');
+}
+.gnb__list .gnb__item.menu--status .menu--icon {
+  background-image: url('/public/img/icon/icon-chart.svg');
+  background-size: 22px;
+}
+.gnb__list .gnb__item.menu--status:hover .menu--icon {
+  background-image: url('/public/img/icon/icon-chart-fff.svg');
+}
+.gnb__list .gnb__item.menu--users .menu--icon {
+  background-image: url('/public/img/icon/icon-user-config.svg');
+  background-size: 26px;
+}
+.gnb__list .gnb__item.menu--users:hover .menu--icon {
+  background-image: url('/public/img/icon/icon-user-config-fff.svg');
+}
+.gnb__list .gnb__item .menu--name {
+  line-height: 36px;
+}
+.gnb__list .gnb__item:hover .menu--name {
+  color: #fff;
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url('./reset.css');
+@import url('./font.css');
+@import url('./common.css');
+@import url('./layout.css');
+@import url('./base.css');
+
+/** default
+  font-family: Pretendard 14px
+  main-color: #313131;
+**/
+
+/** ID 표기
+#mentKwrdDate
+#mentKwrdText
+**/
+
+/** className 표기
+.mentioned-keyword {
+  .mentioned-keyword__wrap {
+    .mentioned-keyword__list {
+      .mentioned-keyword__item {
+        .mentioned-keyword--num {}
+        .mentioned-keyword--txt {
+          .mentioned-keyword__date.date--start {}
+          .mentioned-keyword__date.date--end {}
+        }
+        .mentioned-keyword__icon.icon--cat {}
+        .mentioned-keyword__icon.icon--dog {}
+        .mentioned-keyword__icon.icon--lion {}
+      }
+    }
+  }
+}
+
+<li class="banner__item nowOn"></li>
+**/
+
+/**** 작업 중 메모 ****/
+/** 
+  모달 기능별로 제작
+  ㄱ. 약관 등 장문 용
+  ㄴ. alert 메세지 용
+  ㄷ. 메인 컨텐츠 용
+**/
+/**
+  푸터는 공유오피스 것으로 사용
+**/
