@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 학습모델 학습데이터 구축">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="AI Learning Data Collecting System">
+  <link rel="short cut icon" type="image/x-icon" href="/public/img/icon/favicon.png">
+  <title>AI 학습모델 학습데이터 구축</title>
+
+  <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+  <div id="wrap" class="usersPage">
+    <!-- SIDE MENU -->
+    <div id="aside"></div>
+
+    <!-- PAGE CONTENT -->
+    <div id="main">
+      <div class="wrapper">
+        <!-- 페이지 탑 -->
+        <div class="page-top">
+          <h2 class="page-title">계정 관리</h2>
+        </div>
+        <div class="section-flex__wrap d--2">
+          <!-- 페이지 컨텐츠 섹션 // 계정 목록 -->
+          <section id="acountList" class="page-content acountList">
+            <div class="section__inner">
+              <!-- 섹션 HEAD -->
+              <div class="section--head">
+                <h3 class="section-title">계정 목록</h3>
+                <div class="head-btn__wrap">
+                  <p class="btn btn--plus ty01">
+                    <button>신규 생성</button>
+                  </p>
+                </div>
+              </div>
+              <!-- 섹션 BODY -->
+              <div class="section--body">
+                <div class="content__wrap">
+                  <div class="content__inner">
+                    <table class="section-content content--table">
+                      <colgroup>
+                        <col width="%">
+                        <col width="%">
+                        <col width="%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>
+                            <p class="th__wrap">
+                              <span class="acount-id">관리자</span>
+                            </p>
+                          </th>
+                          <th>
+                            <p class="th__wrap">
+                              <span class="acount-id">검수자</span>
+                              <span class="acount-name">이름</span>
+                            </p>
+                          </th>
+                          <th>
+                            <p class="th__wrap">
+                              <span class="acount-id">작업자</span>
+                              <span class="acount-name">이름</span>
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">M101</span>
+                            </p>
+                          </td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">T101</span>
+                              <span class="acount-name">백두산</span>
+                            </p>
+                          </td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H101</span>
+                              <span class="acount-name">홍두깨</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H102</span>
+                              <span class="acount-name">미나리</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H103</span>
+                              <span class="acount-name">호나물</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H104</span>
+                              <span class="acount-name">기국소</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H105</span>
+                              <span class="acount-name">조하라</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H105</span>
+                              <span class="acount-name">조하라</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">T201</span>
+                              <span class="acount-name">로키산</span>
+                            </p>
+                          </td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H201</span>
+                              <span class="acount-name">참통깨</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H202</span>
+                              <span class="acount-name">최낑깡</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H202</span>
+                              <span class="acount-name">최낑깡</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H203</span>
+                              <span class="acount-name">한능금</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H203</span>
+                              <span class="acount-name">이차라</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <p class="td__wrap">
+                              <span class="acount-id">H204</span>
+                              <span class="acount-name">지교워</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 페이지 컨텐츠 섹션 // 계정 정보 -->
+          <section id="acountInfo" class="page-content acountInfo">
+            <div class="section__inner">
+              <!-- 섹션 HEAD -->
+              <div class="section--head">
+                <h3 class="section-title">계정 정보</h3>
+              </div>
+              <!-- 섹션 BODY -->
+              <div class="section--body">
+                <div class="content__wrap">
+                  <div class="section-content content--input">
+                    <form action="">
+                      <legend class="blind">계정 관리</legend>
+                      <ul class="input-info__list">
+                        <li class="input-info__item">
+                          <span class="item-name">소속</span>
+                          <div class="input-label input--user-team">
+                            <p class="select__wrap select--authority">
+                              <select name="" id="">
+                                <option value="" disabled selected>권한</option>
+                                <option value="">관리자</option>
+                                <option value="">검수자</option>
+                                <option value="">작업자</option>
+                              </select>
+                              <span class="select-icon"></span>
+                            </p>
+                            <p class="select__wrap select--team">
+                              <select name="" id="">
+                                <option value="" disabled selected>소속</option>
+                                <option value="">1팀</option>
+                                <option value="">2팀</option>
+                                <option value="">3팀</option>
+                                <option value="">4팀</option>
+                              </select>
+                              <span class="select-icon"></span>
+                            </p>
+                          </div>
+                        </li>
+                        <li class="input-info__item">
+                          <span class="item-name">이름</span>
+                          <label class="input-label input--name">
+                            <input type="text" placeholder="이름을 입력해 주세요.">
+                          </label>
+                        </li>
+                        <li class="input-info__item">
+                          <span class="item-name">휴대전화 번호</span>
+                          <label class="input-label input--phone">
+                            <input type="number" placeholder="휴대전화 번호를 입력해 주세요.">
+                          </label>
+                        </li>
+                        <li class="input-info__item">
+                          <span class="item-name">생년월일</span>
+                          <label class="input-label input--birth">
+                            <input type="number" placeholder="예) 2023.01.01">
+                          </label>
+                        </li>
+                        <li class="input-info__item">
+                          <span class="item-name">ID</span>
+                          <label class="input-label input--id">
+                            <input type="text" placeholder="팀별 고유번호를 입력해 주세요.">
+                          </label>
+                        </li>
+                        <li class="input-info__item">
+                          <span class="item-name">PW</span>
+                          <label class="input-label input--pw">
+                            <input type="text" placeholder="비밀번호를 지정해 주세요.">
+                          </label>
+                        </li>
+                      </ul>
+                    </form>
+                    <!-- 계정 추가 및 수정 // 버튼 랩 -->
+                    <div class="btn__wrap bottom">
+                      <p id="userModifyBtn" class="btn btn--modify ty01">
+                        <button>수정하기</button>
+                      </p>
+                      <p id="userCancelBtn" class="btn btn--cancel ty02">
+                        <button>취소하기</button>
+                      </p>
+                      <p id="userSaveBtn" class="btn btn--save ty-green">
+                        <button>저장하기</button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+
+  <script src="/public/js/jquery-3.7.1.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+
+</html>

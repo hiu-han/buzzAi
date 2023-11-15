@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div id="wrap">
+  <div id="wrap" class="downPage">
     <!-- SIDE MENU -->
     <div id="aside"></div>
 
@@ -46,10 +46,30 @@
                     </select>
                     <span class="select-icon"></span>
                   </p -->
+                  <div class="doc-count__wrap util__wrap">
+                    <span class="util-name">조회수</span>
+                    <p class="doc-count util-subs">총 <span class="doc-count--num">100</span>건</p>
+                  </div>
                 </div>
                 <div class="section-util--right">
-                  <p class="btn ty01">
-                    <a href="/chat/chat_add.html">신규 문서 생성</a>
+                  <div class="down-range-select__wrap util__wrap">
+                    <span class="util-name">내려받기 범위</span>
+                    <div class="util-input">
+                      <label class="input-label range--start">
+                        <input type="number" placeholder="시작 번호">
+                      </label>
+                      <span class="label-middle">~</span>
+                      <label class="input-label range--end">
+                        <input type="number" placeholder="종료 번호">
+                      </label>
+                    </div>
+                    <p class="btn btn--search ty02">
+                      <button>조회</button>
+                    </p>
+                  </div>
+                  <!-- 기본 비활성화 // addClass .nowOn으로 활성화 -->
+                  <p id="downJsonBtn" class="btn btn--down ty01 nowOn">
+                    <button>내려받기</button>
                   </p>
                 </div>
               </div>
@@ -149,11 +169,7 @@
                           clients
                         </a>
                       </td>
-                      <td class="td--value">
-                        <p class="btn btn-preview ty-td">
-                          <button>미리보기</button>
-                        </p>
-                      </td>
+                      <td>러셀 브런슨(Russell Brunson)</td>
                       <td class="td--task">러셀 브런슨의 어쩌고 저쩌고 이러쿵 저러쿵 이랬다 저랬다 엉거주춤</td>
                       <td>작성 완료</td>
                       <td>20230101</td>
@@ -172,34 +188,7 @@
                           clients
                         </a>
                       </td>
-                      <td class="td--value">
-                        <p class="btn btn-preview ty-td">
-                          <button>미리보기</button>
-                        </p>
-                      </td>
-                      <td class="td--task">러셀 브런슨의 어쩌고 저쩌고 이러쿵 저러쿵 이랬다 저랬다 엉거주춤</td>
-                      <td>작성 불가</td>
-                      <td>20230101</td>
-                      <td>20230102</td>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <td>H101</td>
-                      <td>C101</td>
-                      <td>0001</td>
-                      <td>00001</td>
-                      <td class="td--origin">
-                        <a href="/chat/chat_chk.html" class="link-area">
-                          Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it
-                          pertains to a growth marketing agency implementing these strategies and tactics for their
-                          clients
-                        </a>
-                      </td>
-                      <td class="td--value">
-                        <p class="btn btn-preview ty-td">
-                          <button>미리보기</button>
-                        </p>
-                      </td>
+                      <td>러셀 브런슨(Russell Brunson)</td>
                       <td class="td--task">러셀 브런슨의 어쩌고 저쩌고 이러쿵 저러쿵 이랬다 저랬다 엉거주춤</td>
                       <td>작성 불가</td>
                       <td>20230101</td>
@@ -226,106 +215,12 @@
       </div>
       <!-- FOOTER -->
       <div id="footer"></div>
-
-      <!-- MODAL -->
-      <div id="modal">
-        <div id="modalValuePreview" class="modal__container">
-          <div class="modal-bg"></div>
-          <div class="modal__box">
-            <div class="modal__inner">
-              <!-- 모달 헤드 -->
-              <div class="modal--hd">
-                <h3 class="modal-title">생성내용 미리보기</h3>
-                <div class="modal-hd-btn__wrap">
-                  <p class="btn btn--modal-copy btn--modal-head">
-                    <button>복사하기</button>
-                  </p>
-                  <p class="btn btn--modal-cls btn--modal-head">
-                    <button>x</button>
-                  </p>
-                </div>
-              </div>
-              <!-- 모달 바디 -->
-              <div class="modal--bd">
-                <div class="modal-content__wrap">
-                  <div class="modal-content content--value-preview">
-                    <div class="content__inner">
-                      <!-- .content--text // 미리보기 삽입될 부분 -->
-                      <div class="content--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, error sit quae optio beatae
-                        accusantium, minus aliquam sint placeat facilis reiciendis quas soluta. Veritatis praesentium
-                        iste
-                        ipsum tempora exercitationem amet in ducimus inventore, fuga, ullam beatae. Excepturi, nihil
-                        tenetur dignissimos incidunt corrupti harum, deserunt eligendi, nam omnis error reiciendis
-                        inventore porro soluta veritatis totam. Eaque repellendus facere aliquid ut quaerat veritatis
-                        iusto sed unde accusamus non est fugit recusandae harum alias eligendi sapiente, doloribus esse,
-                        ex sunt? Odit, harum iste iure mollitia ut maxime consequatur molestiae dolorum excepturi in
-                        ullam
-                        veniam sunt libero tempore commodi. Similique cupiditate alias iste! Voluptatibus id voluptatum
-                        vero sint minima molestiae, enim, voluptas necessitatibus, adipisci ab aperiam doloribus eos?
-                        Suscipit quasi quibusdam asperiores natus repellendus corrupti, quisquam laboriosam vitae
-                        numquam
-                        saepe in esse, velit iusto possimus, culpa accusamus. Officiis reiciendis facere dignissimos
-                        ratione hic sapiente qui perferendis quos similique numquam, corrupti, eaque nemo debitis
-                        dolore,
-                        cupiditate magnam reprehenderit quis ipsum! Optio, repellat vel consectetur sequi qui commodi
-                        harum necessitatibus praesentium officiis quasi quisquam nihil numquam. Ea cumque ut suscipit
-                        sunt
-                        consequuntur nisi, accusantium, praesentium culpa neque aut aspernatur molestias ab similique
-                        voluptate quos laudantium facilis exercitationem eum. Consectetur earum nam inventore
-                        perspiciatis
-                        beatae reiciendis veniam.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
 
   <script src="/public/js/jquery-3.7.1.js"></script>
   <script src="/public/js/include.js"></script>
-
-  <script>
-
-    /** 모달 핸들러 START **/
-    const NOWON_CLASSNAME = 'nowOn';
-
-    const sModHandler = {
-      modOn: function (clicker, modalName) {
-        $(clicker).on('click', function (e) {
-          $(modalName).addClass(NOWON_CLASSNAME);
-          e.preventDefault();
-          $(`${modalName} .modal-bg`).on(
-            'scroll touchmove mousewheel',
-            function (e) {
-              e.preventDefault();
-              e.stopPropagation();
-              return false;
-            }
-          );
-        });
-      },
-      modOff: function (clicker, modalName) {
-        $(clicker).on('click', function (e) {
-          console.log('clicked');
-          $(modalName).removeClass(NOWON_CLASSNAME);
-          e.preventDefault();
-          $(`${modalName} .modal-bg`).off('scroll touchmove mousewheel');
-        });
-      },
-    };
-    sModHandler.modOn('.btn-preview', '#modalValuePreview');
-    sModHandler.modOff('.btn--modal-cls', '#modalValuePreview');
-    sModHandler.modOff('.modal-bg', '.modal__container');
-    /** 모달 핸들러 END **/
-
-  </script>
 </body>
 
 </html>

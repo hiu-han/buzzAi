@@ -15,11 +15,11 @@
   justify-content: center;
   gap: 14px;
 }
-.btn__wrap.bottom {
-  margin-top: 28px;
-}
 .btn__wrap .btn {
   font-size: 0;
+}
+.btn__wrap.bottom {
+  margin-top: 28px;
 }
 .btn__wrap .btn:first-child {
   margin-left: 0;
@@ -59,43 +59,20 @@
   background-color: var(--color-primary-hover);
 }
 .btn.ty02 {
-  background-color: #e6e6e6;
+  background-color: #ededed;
 }
 .btn.ty02:hover {
   background-color: #dfdfdf;
 }
-.btn.ty-green {
-  background-color: var(--color-pass);
-}
-.btn.ty-green:hover {
-  background-color: var(--color-pass-hover);
-}
 .btn.ty-danger {
   background-color: var(--color-danger);
 }
-.btn.ty-danger:hover {
-  background-color: var(--color-danger-hover);
-}
 .btn.ty-danger > a,
-.btn.ty-danger > button,
-.btn.ty-green > a,
-.btn.ty-green > button {
+.btn.ty-danger > button {
   color: #fff;
 }
-.btn.ty-td {
-  border: 1px solid #ddd;
-  background-color: #fff;
-}
-.btn.ty-td > button,
-.btn.ty-td > a {
-  font-size: 12px;
-  line-height: 26px;
-  color: #616161;
-  letter-spacing: -0.04rem;
-}
-.btn.ty-td:hover {
-  border: 1px solid #d8d8da;
-  background-color: #d8d8da;
+.btn.ty-danger:hover {
+  background-color: var(--color-danger-hover);
 }
 .btn.wide > button {
   padding: 0 34px;
@@ -110,9 +87,6 @@
 .select__wrap > .select-name {
   display: inline-block;
   margin-right: 6px;
-}
-select {
-  cursor: pointer;
 }
 .select__wrap > select {
   display: inline-block;
@@ -139,14 +113,11 @@ select {
   height: 14px;
   background-image: url('../img/icon/icon-select-arrow.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 90% 53%;
   background-size: 9px;
 }
 .select__wrap > select:focus + .select-icon {
   /* background-color: #aaa; */
-}
-select option[value=''][disabled] {
-  display: none;
 }
 
 /** INPUT -> radio **/
@@ -224,7 +195,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 .search-date input[type='date'] {
   width: 220px;
-  line-height: 30px;
+  height: 38px;
   padding-right: 10px;
   border-radius: 6px;
   text-indent: 36px;
@@ -243,21 +214,6 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 .search-date__wrap > .date--start {
   margin-right: 4px;
-}
-
-/** INPUT -> number **/
-input[type='number'] {
-  border: 1px solid var(--color-line--input-default);
-  background-color: #fafafd;
-  font-size: 13px;
-  color: #888;
-  vertical-align: middle;
-  cursor: text;
-}
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 /** COMMON -> PAGINATION **/
@@ -279,28 +235,24 @@ input[type='number']::-webkit-inner-spin-button {
   border-radius: 50%;
   border: none;
   text-indent: -99999px;
-  background-image: url('/public/img/icon/icon-arrow-next-default.svg');
+  background-image: url('../img/icon/icon-arrow-next-default.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: middle;
   cursor: pointer;
   transition: 0.2s;
 }
 .paging__wrap .page-arrow.prev > button {
-  background-image: url('/public/img/icon/icon-arrow-prev-default.svg');
+  background-image: url('../img/icon/icon-arrow-prev-default.svg');
 }
 .paging__wrap .page-arrow:hover > button {
   box-shadow: var(--bxshadow-s);
 }
 .paging__wrap .page-arrow.prev:hover > button {
-  background-image: url('/public/img/icon/icon-arrow-prev-hover.svg');
+  background-image: url('../img/icon/icon-arrow-prev-hover.svg');
 }
 .paging__wrap .page-arrow.next:hover > button {
-  background-image: url('/public/img/icon/icon-arrow-next-hover.svg');
+  background-image: url('../img/icon/icon-arrow-next-hover.svg');
 }
 .paging__wrap .page-arrow.disable > button {
   opacity: 0.5;
@@ -310,10 +262,10 @@ input[type='number']::-webkit-inner-spin-button {
   cursor: default;
 }
 .paging__wrap .page-arrow.prev.disable:hover > button {
-  background-image: url('/public/img/icon/icon-arrow-prev-default.svg');
+  background-image: url('../img/icon/icon-arrow-prev-default.svg');
 }
 .paging__wrap .page-arrow.next.disable:hover > button {
-  background-image: url('/public/img/icon/icon-arrow-next-default.svg');
+  background-image: url('../img/icon/icon-arrow-next-default.svg');
 }
 .pagination__list {
   display: inline-block;
@@ -322,8 +274,8 @@ input[type='number']::-webkit-inner-spin-button {
 .pagination__list .page__item {
   display: inline-block;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   text-align: center;
   font-size: 14px;
   color: #aaa;
