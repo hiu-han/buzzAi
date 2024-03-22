@@ -252,29 +252,183 @@
                         <li class="chat__item human">
                           <p class="chat--icon"><span class="icon"></span><span class="icon--cls"></span></p>
                           <div class="chat__inner">
-                            <textarea
-                              class="chat--txt">체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다??</textarea>
+                            <textarea class="chat--txt"
+                              style="height: 58px;">체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다??</textarea>
+
+                            <div class="added-link__wrap human">
+                              <div class="wrap-name">참조 URL</div>
+                              <ul class="input__list">
+                                <li class="input__item">
+                                  <input type="text" placeholder="URL을 입력해 주세요.">
+                                  <p class="btn btn--icon btn--del-input"><button>x</button></p>
+                                </li>
+                                <li class="input__item">
+                                  <input type="text" placeholder="URL을 입력해 주세요.">
+                                  <p class="btn btn--icon btn--del-input"><button>x</button></p>
+                                </li>
+                                <li class="input__item">
+                                  <input type="text" placeholder="URL을 입력해 주세요.">
+                                  <p class="btn btn--icon btn--del-input"><button>x</button></p>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <!-- side btn wrap -->
+                            <div class="side-btn__wrap">
+                              <p class="btn btn--icon btn--chk-changed">
+                                <label class="input-label">
+                                  <input type="checkbox">
+                                  <span class="input-label"></span>
+                                </label>
+                                <span class="btn-name">수정됨</span>
+                              </p>
+                              <p class="btn btn--icon btn--url">
+                                <button>+</button>
+                                <span class="btn-name">참조URL 추가</span>
+                              </p>
+                              <p class="btn btn--icon btn--preview">
+                                <button>미리보기</button>
+                                <span class="btn-name">미리보기</span>
+                              </p>
+                            </div>
                           </div>
                         </li>
                         <li class="chat__item gpt">
                           <p class="chat--icon"><span class="icon"></span><span class="icon--cls"></span></p>
                           <div class="chat__inner">
-                            <textarea
-                              class="chat--txt">국회는 국가의 예산안을 심의·확정한다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 사면·감형 및 복권에 관한 사항은 법률로 정한다. 혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.</textarea>
+                            <textarea class="chat--txt"
+                              style="height: 58px;">국회는 국가의 예산안을 심의·확정한다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 사면·감형 및 복권에 관한 사항은 법률로 정한다. 혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.</textarea>
+
+                            <!-- 수정된 대화 -->
+                            <div class="added__box">
+                              <div class="box-head">
+                                <h5 class="box-title">수정된 대화</h5>
+                                <div class="box-btn__wrap">
+                                  <p class="btn btn--icon btn--add-url">
+                                    <button>URL추가</button>
+                                  </p>
+                                </div>
+                              </div>
+                              <!-- 수정된 대화 텍스트 -->
+                              <div class="modified-chat__wrap">
+                                <textarea
+                                  class="chat--txt chat--modified">국회는 국가의 예산안을 심의·확정한다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 사면·감형 및 복권에 관한 사항은 법률로 정한다. 혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.</textarea>
+                              </div>
+                              <!-- 참조 url -->
+                              <div class="added-link__wrap">
+                                <div class="wrap-name">참조 URL</div>
+                                <ul class="input__list">
+                                  <li class="input__item">
+                                    <input type="text" placeholder="URL을 입력해 주세요.">
+                                    <p class="btn btn--icon btn--del-input"><button>x</button></p>
+                                  </li>
+                                  <li class="input__item">
+                                    <input type="text" placeholder="URL을 입력해 주세요.">
+                                    <p class="btn btn--icon btn--del-input"><button>x</button></p>
+                                  </li>
+                                  <li class="input__item">
+                                    <input type="text" placeholder="URL을 입력해 주세요.">
+                                    <p class="btn btn--icon btn--del-input"><button>x</button></p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- side btn wrap -->
+                            <div class="side-btn__wrap">
+                              <p class="btn btn--icon btn--chk-changed">
+                                <label class="input-label">
+                                  <input type="checkbox">
+                                  <span class="input-label"></span>
+                                </label>
+                                <span class="btn-name">수정됨</span>
+                              </p>
+                              <p class="btn btn--icon btn--add-item">
+                                <!-- <button>+</button> -->
+                                <label class="input-label">
+                                  <input type="checkbox">
+                                  <span class="input-label"></span>
+                                </label>
+                                <span class="btn-name">참조링크 추가</span>
+                              </p>
+                            </div>
                           </div>
                         </li>
                         <li class="chat__item human">
                           <p class="chat--icon"><span class="icon"></span><span class="icon--cls"></span></p>
                           <div class="chat__inner">
-                            <textarea
-                              class="chat--txt">공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다?</textarea>
+                            <textarea class="chat--txt"
+                              style="height: 58px;">공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다?</textarea>
+
+                            <!-- side btn wrap -->
+                            <div class="side-btn__wrap">
+                              <p class="btn btn--icon btn--chk-changed">
+                                <label class="input-label">
+                                  <input type="checkbox">
+                                  <span class="input-label"></span>
+                                </label>
+                                <span class="btn-name">수정됨</span>
+                              </p>
+                              <p class="btn btn--icon btn--add-item">
+                                <button>+</button>
+                                <span class="btn-name">참조링크 추가</span>
+                              </p>
+                              <p class="btn btn--icon btn--preview">
+                                <button>미리보기</button>
+                                <span class="btn-name">미리보기</span>
+                              </p>
+                            </div>
                           </div>
                         </li>
                         <li class="chat__item gpt">
                           <p class="chat--icon"><span class="icon"></span><span class="icon--cls"></span></p>
                           <div class="chat__inner">
-                            <textarea
-                              class="chat--txt">국회의원은 법률이 정하는 직을 겸할 수 없다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다. 대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의 경우와 초병·초소·유독음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다. 다만, 사형을 선고한 경우에는 그러하지 아니하다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.</textarea>
+                            <textarea class="chat--txt"
+                              style="height: 58px;">국회의원은 법률이 정하는 직을 겸할 수 없다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다. 대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의 경우와 초병·초소·유독음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다. 다만, 사형을 선고한 경우에는 그러하지 아니하다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.</textarea>
+
+                            <!-- side btn wrap -->
+                            <div class="side-btn__wrap">
+                              <p class="btn btn--icon btn--chk-changed">
+                                <label class="input-label">
+                                  <input type="checkbox">
+                                  <span class="input-label"></span>
+                                </label>
+                                <span class="btn-name">수정됨</span>
+                              </p>
+                              <p class="btn btn--icon btn--add-item">
+                                <button>+</button>
+                                <span class="btn-name">참조링크 추가</span>
+                              </p>
+                              <p class="btn btn--icon btn--preview">
+                                <button>미리보기</button>
+                                <span class="btn-name">미리보기</span>
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="chat__item human">
+                          <p class="chat--icon"><span class="icon"></span><span class="icon--cls"></span></p>
+                          <div class="chat__inner">
+                            <textarea class="chat--txt" style="height: 58px;">1</textarea>
+
+                            <!-- side btn wrap -->
+                            <div class="side-btn__wrap">
+                              <p class="btn btn--icon btn--chk-changed">
+                                <label class="input-label">
+                                  <input type="checkbox">
+                                  <span class="input-label"></span>
+                                </label>
+                                <span class="btn-name">수정됨</span>
+                              </p>
+                              <p class="btn btn--icon btn--add-item">
+                                <button>+</button>
+                                <span class="btn-name">참조링크 추가</span>
+                              </p>
+                              <p class="btn btn--icon btn--preview">
+                                <button>미리보기</button>
+                                <span class="btn-name">미리보기</span>
+                              </p>
+                            </div>
                           </div>
                         </li>
                         <!-- 대화 추가하기 // 6turn을 채운 경우 addClass .del ->> 노출되지 않는다. -->
@@ -289,6 +443,208 @@
                         </li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 페이지 컨텐츠 섹션 // Task type -->
+        <section class="page-content TaskType">
+          <div class="section__inner">
+            <!-- 섹션 HEAD -->
+            <div class="section--head">
+              <h3 class="section-title">대화 유형 선택</h3>
+              <p class="title-info">복수 선택 가능</p>
+            </div>
+            <!-- 섹션 BODY -->
+            <div class="section-body">
+              <div class="content__wrap">
+                <!-- 주제 -->
+                <div id="taskTopic" class="section-content chkList">
+                  <div class="chk-list__box">
+                    <h4 class="list--name">대화 주제</h4>
+                    <ul class="chk__list">
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Lifestyle</span><span class="txt--subs">여가생활, 쇼핑, 취미, 날씨, 운동, 요리
+                                레시피 등 생활 전반</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">STEM</span><span class="txt--subs">과학, 기술, 공학, 수학 등</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Humanities</span><span class="txt--subs">인문학, 언어, 문학, 역사, 철학
+                                등</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Nature</span><span class="txt--subs">자연, 동물, 식물 등</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Finance</span><span class="txt--subs">경영, 경제, 금융, 보험, 회계, 세무, 부동산
+                                등</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Ethics</span><span class="txt--subs">도덕, 윤리 등</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Medical</span><span class="txt--subs">의학, 의료 등</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item item--other">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">기타</span>
+                              <span class="txt--subs">* 반드시 간단 명료하게 기재
+                                <input type="text" class="input--other">
+                              </span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 답변 유형 -->
+                <div id="taskAnswerType" class="section-content chkList">
+                  <div class="chk-list__box">
+                    <h4 class="list--name">답변 유형</h4>
+                    <ul class="chk__list">
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Info-seek</span><span class="txt--subs">일반 정보 제공</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Reasoning</span><span class="txt--subs">추론</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Procedure</span><span class="txt--subs">순서 정리</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Writting</span><span class="txt--subs">작문, 창작</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Coding</span><span class="txt--subs">코딩</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Role-play</span><span class="txt--subs">역할극</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">Math</span><span class="txt--subs">수학 문제 해결</span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="chk__item item--other">
+                        <div class="chk__inner">
+                          <label class="input-label">
+                            <input type="checkbox">
+                            <p class="label-txt">
+                              <span class="txt--name">기타</span>
+                              <span class="txt--subs">* 반드시 간단 명료하게 기재
+                                <input type="text" class="input--other">
+                              </span>
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -393,6 +749,42 @@
 
     <!-- FOOTER -->
     <div id="footer"></div>
+
+    <!-- MODAL -->
+    <div id="modal">
+      <div id="modalChatPreview" class="modal__container">
+        <div class="modal-bg"></div>
+        <div class="modal__box">
+          <div class="modal__inner">
+            <!-- 모달 헤드 -->
+            <div class="modal--hd">
+              <h3 class="modal-title">생성데이터 미리보기</h3>
+              <div class="modal-hd-btn__wrap">
+                <p class="btn btn--modal-cls btn--modal-head">
+                  <button>x</button>
+                </p>
+              </div>
+            </div>
+            <!-- 모달 바디 -->
+            <div class="modal--bd">
+              <div class="modal-content__wrap">
+                <div class="modal-content content--value-preview">
+                  <div class="content__inner">
+                    <!-- .content--text // 미리보기 내용 삽입 -->
+                    <div class="content--text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam voluptate, doloremque
+                      facere veritatis illum, illo rerum recusandae deserunt cum nulla dicta hic molestias vel optio ab,
+                      officia accusamus aperiam. Voluptas totam esse itaque harum ut aut iure labore recusandae
+                      accusantium accusamus aperiam repudiandae fugiat quos, fugit vitae earum debitis.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="/public/js/jquery-3.7.1.js"></script>
   <script src="/public/js/include.js"></script>
@@ -404,10 +796,11 @@
       const chatTxts = document.querySelectorAll(`.chat--txt`);
 
       for (i = 0; i < chatTxts.length; i++) {
-        if (chatTxts[i].scrollHeight > chatTxts[i].clientHeight) //textarea height 확장
+        if (chatTxts[i].scrollHeight >= chatTxts[i].clientHeight) { //textarea height 확장
           chatTxts[i].style.height = chatTxts[i].scrollHeight + "px";
-        else //textarea height 축소
+        } else { //textarea height 축소
           chatTxts[i].style.height = (chatTxts[i].scrollHeight - 18) + "px";
+        }
       }
       function autoResizeTextarea() {
         for (i = 0; i < chatTxts.length; i++) {
@@ -452,6 +845,54 @@
       });
       /** 작업내용 // 작성불가사유 선택 후 모든 선택 해제하기 // END **/
 
+      /** 작업내용 // 봇 답변 수정 텍스트박스 열고 닫기 // START **/
+      $('.btn--add-item').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).find('input[type="checkbox"]').is(':checked')) {
+          $(this).find('input[type="checkbox"]').prop('checked', false);
+          $(this).closest('.side-btn__wrap').siblings('.added__box').css('display', 'none');
+          console.log('clicked');
+        } else {
+          const textarea = $(this).closest('.side-btn__wrap').siblings('.added__box').find('textarea');
+          console.log(this);
+          $(this).find('input[type="checkbox"]').prop('checked', true);
+          $(this).closest('.side-btn__wrap').siblings('.added__box').css('display', 'block');
+          $(textarea).css('height', 'auto').css('height', textarea.scrollHeight + 'px');
+        };
+      });
+      /** 작업내용 // 봇 답변 수정 텍스트박스 열고 닫기 // END **/
+
+      /** 모달 핸들러 START **/
+      const NOWON_CLASSNAME = 'nowOn';
+
+      const sModHandler = {
+        modOn: function (clicker, modalName) {
+          $(clicker).on('click', function (e) {
+            $(modalName).addClass(NOWON_CLASSNAME);
+            e.preventDefault();
+            $(`${modalName} .modal-bg`).on(
+              'scroll touchmove mousewheel',
+              function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+              }
+            );
+          });
+        },
+        modOff: function (clicker, modalName) {
+          $(clicker).on('click', function (e) {
+            console.log('clicked');
+            $(modalName).removeClass(NOWON_CLASSNAME);
+            e.preventDefault();
+            $(`${modalName} .modal-bg`).off('scroll touchmove mousewheel');
+          });
+        },
+      };
+      sModHandler.modOn('.btn--preview', '#modalChatPreview');
+      sModHandler.modOff('.btn--modal-cls', '#modalChatPreview');
+      sModHandler.modOff('.modal-bg', '.modal__container');
+      /** 모달 핸들러 END **/
     });
   </script>
 </body>

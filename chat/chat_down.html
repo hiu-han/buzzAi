@@ -53,7 +53,7 @@
                 </div>
                 <div class="section-util--right">
                   <div class="down-range-select__wrap util__wrap">
-                    <span class="util-name">내려받기 범위</span>
+                    <span class="util-name">작업 조회</span>
                     <div class="util-input">
                       <label class="input-label range--start">
                         <input type="number" placeholder="시작 번호">
@@ -66,11 +66,20 @@
                     <p class="btn btn--search ty02">
                       <button>조회</button>
                     </p>
+                    <!-- 기본 비활성화 // addClass .nowOn으로 활성화 -->
+                    <p id="downJsonBtn" class="btn btn--down ty01 nowOn">
+                      <button>내려받기</button>
+                    </p>
                   </div>
-                  <!-- 기본 비활성화 // addClass .nowOn으로 활성화 -->
-                  <p id="downJsonBtn" class="btn btn--down ty01 nowOn">
-                    <button>내려받기</button>
-                  </p>
+                  <div class="down-btn__wrap util__wrap">
+                    <span class="util-name">납품 내려받기</span>
+                    <p class="btn btn--down weekly ty01">
+                      <button>주차 내역</button>
+                    </p>
+                    <p class="btn btn--down whole ty-green">
+                      <button>전체 내역</button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
